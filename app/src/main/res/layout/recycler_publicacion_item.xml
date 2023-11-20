@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginVertical="10dp"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/rounded_corner2">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_marginVertical="4dp"
+        android:id="@+id/muroPublicacionTitulo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="texto de la publicacion"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="17sp"
+        android:layout_marginVertical="4dp"
+        android:id="@+id/muroPublicacionContenido"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Título"
+        android:textSize="13sp"
+        android:layout_marginVertical="4dp"
+        android:gravity="right"
+        android:id="@+id/muroPublicacionFecha"/>
+
+</LinearLayout>

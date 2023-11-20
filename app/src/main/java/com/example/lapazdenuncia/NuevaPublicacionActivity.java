@@ -3,6 +3,7 @@ package com.example.lapazdenuncia;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -56,7 +57,8 @@ public class NuevaPublicacionActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     //publicacion subida a firebase
                     Utility.mostrarToast(NuevaPublicacionActivity.this, "La denuncia se ha publicado exitosamente.");
-                    finish();
+//                    finish();
+                    startActivity(new Intent(NuevaPublicacionActivity.this, MainActivity.class));
                 }
                 else{
                     //fallo en la subida
