@@ -3,6 +3,7 @@ package com.example.lapazdenuncia;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -63,13 +64,13 @@ public class CrearCuentaActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     cambioEnProgreso(false);
-                    Toast.makeText(CrearCuentaActivity.this, "Se ha creado la cuenta exitosamente.", Toast.LENGTH_SHORT).show();
+                    Utility.mostrarToast(CrearCuentaActivity.this, "Se ha creado la cuenta exitosamente.");
                     firebaseAuth.getCurrentUser().sendEmailVerification();
                     firebaseAuth.signOut();
                     finish();
                 }
                 else{
-                    Toast.makeText(CrearCuentaActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                    Utility.mostrarToast(CrearCuentaActivity.this, task.getException().getLocalizedMessage());
                 }
             }
         });
