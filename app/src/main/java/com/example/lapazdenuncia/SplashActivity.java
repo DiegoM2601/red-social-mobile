@@ -16,7 +16,7 @@ public class SplashActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashActivity.this, CrearCuentaActivity.class));
 
 //                impedir que el usuario vuelva a esta activity pulsando el botón para ir hacia atrás
 //                ni bien se abra la activity main, la presente activity cesará su ejecución y, por ende, su disponibilidad
