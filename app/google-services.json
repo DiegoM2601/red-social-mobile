@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1036767983396",
+    "project_id": "red-social-1-b3222",
+    "storage_bucket": "red-social-1-b3222.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036767983396:android:8b596f84c05ace5cdae5b1",
+        "android_client_info": {
+          "package_name": "com.example.lapazdenuncia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUXGz3wZPSjqzAofSi1KeT1_cZPZJoNk0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
